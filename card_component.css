@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+
+:root{
+
+    font-family: Lexend Deca;
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        
+ }
+
+ body {
+    font-size: 0.9375rem;
+    background-color: var(--Very-light-gray);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+ }
+
+
+ .card_component {
+    display: grid;
+    grid-template-columns: repeat(1,1 fr);
+    align-items: center;
+    justify-content: center;
+ }
+
+ .card_content {
+    width: 320px;
+    height: 320px;
+    padding: 2.7rem;
+ }
+
+
+ .card_content h2{
+    font-family: "Big shoulders Display"; cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    margin-block: 1rem;
+ }
+
+ .card_content p {
+    color: var(--Transparent-white);
+    line-height: 1.5rem;
+ }
+
+
+
+ .Sedan { 
+     background-color: var(--Bright-orange);
+     border-radius: 5px 5px 0 0 ;
+
+
+ }
+
+ .suvs {
+    background-color: var(--Dark-cyan);
+
+ }
+
+ .luxury { 
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 5px 5px;
+
+ }
+
+ .card_content button {
+
+ }
+
+
+
+
+ .suvs button {
+    color: var(--Very-dark-cyan);
+ }
+
+ .luxury button {
+    color: var(--Very-dark-cyan);
+
+
+ }
+
+ .Sedan button:hover {
+    background-color: var(--Bright-orange);
+    border: 1px solid var(--Transparent-white);
+    color: var(--Transparent-white);
+ }
+
+
+ .suvs button:hover {
+    background-color: var(--Dark-cyan);
+    border: 1px solid var(--Transparent-white);
+    color: var(--Transparent-white);
+ }
+
+
+ .luxury button:hover {
+    background-color: var(--Very-dark-cyan);
+    border: 1px solid var(--Transparent-white);
+    color: var(--Transparent-white);
+ }
+
+
+ /* Desktop view */
+ @media screen and (min-width:1440px) {
+
+    body {
+        font-size: 1 rem;
+        min-height: 100vh;
+    }
+ }
+
+ 
